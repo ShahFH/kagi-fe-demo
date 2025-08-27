@@ -6,13 +6,11 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: #f5f5f5;
   padding: 20px;
   line-height: 1.5;
 }
 
 .container {
-  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -20,4 +18,146 @@ h1 {
   text-align: center;
   margin-bottom: 30px;
   color: #333;
+}
+
+/* Added wrapper for side-by-side layout */
+.widgets-wrapper {
+  display: flex;
+  max-width: 800px;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.recipe-widget {
+  background: white;
+  width: 400px;
+  border: 2px #333;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-widget h2 {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+/* Hide the toggle checkboxes */
+.toggle-checkbox {
+  display: none;
+}
+
+/* Ingredient styles */
+.ingredient {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 2px 0;
+}
+
+.ingredient input[type="checkbox"] {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.ingredient label {
+  cursor: pointer;
+  color: #000;
+  font-size: 14px;
+}
+
+.ingredient input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Hidden ingredients - initially hidden */
+.hidden-ingredients {
+  display: none;
+}
+
+/* Show hidden ingredients when toggle is checked */
+.toggle-checkbox:checked ~ .ingredients-list .hidden-ingredients {
+  display: block;
+}
+
+/* Text content styles */
+.text-content p {
+  margin-bottom: 8px;
+  color: #000;
+  font-size: 14px;
+}
+
+/* Hidden text - initially hidden */
+.hidden-text {
+  display: none;
+}
+
+/* Show hidden text when toggle is checked */
+.toggle-checkbox:checked ~ .text-content .hidden-text {
+  display: block;
+}
+
+/* Updated toggle button styles to remove border and background */
+.toggle-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 0;
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  transition: opacity 0.2s ease;
+}
+
+.toggle-button:hover {
+  opacity: 0.7;
+}
+
+/* Show/hide toggle buttons based on state */
+.show-more {
+  display: block;
+}
+
+.show-less {
+  display: none;
+}
+
+/* When toggle is checked, swap button visibility */
+.toggle-checkbox:checked ~ .show-more {
+  display: none;
+}
+
+.toggle-checkbox:checked ~ .show-less {
+  display: block;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .widgets-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .recipe-widget {
+    padding: 15px;
+  }
+
+  .ingredient label {
+    font-size: 13px;
+  }
 }

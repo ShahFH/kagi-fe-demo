@@ -3,9 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recipe Widgets</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Recipe Widgets Demo</h1>
+        
+        <!-- Added wrapper div for side-by-side layout -->
+        <div class="widgets-wrapper">
+            <!-- Example 1: Checkbox Recipe Widget -->
+            <div class="recipe-widget">
+                <h2>Meat Lasagna Recipe</h2>
+                <div class="ingredients-container">
+                    <input type="checkbox" id="toggle-ingredients" class="toggle-checkbox">
+                    
+                    <div class="ingredients-list">
+                        <div class="ingredient">
+                            <input type="checkbox" id="ing1">
+                            <label for="ing1">1 pound sweet Italian sausage</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="ing2">
+                            <label for="ing2">3/4 pound lean ground beef</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="ing3">
+                            <label for="ing3">1/2 cup minced onion</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="ing4">
+                            <label for="ing4">2 cloves garlic, crushed</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="ing5">
+                            <label for="ing5">1 (28 ounce) can crushed tomatoes</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="ing6">
+                            <label for="ing6">2 (6 ounce) cans tomato paste</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="ing7">
+                            <label for="ing7">2 (6.5 ounce) cans canned tomato sauce</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="ing8">
+                            <label for="ing8">1/2 cup water</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="ing9">
+                            <label for="ing9">2 tablespoons white sugar</label>
+                        </div>
+                        <div class="ingredient">
+                            <input type="checkbox" id="ing10">
+                            <label for="ing10">1 1/2 teaspoons dried basil leaves</label>
+                        </div>
+                        
+                        <!-- Hidden ingredients that show when expanded -->
+                        <div class="hidden-ingredients">
+                            <div class="ingredient">
+                                <input type="checkbox" id="ing11">
+                                <label for="ing11">1/2 teaspoon fennel seeds</label>
+                            </div>
+                            <div class="ingredient">
+                                <input type="checkbox" id="ing12">
+                                <label for="ing12">1 teaspoon Italian seasoning</label>
+                            </div>
+                            <div class="ingredient">
+                                <input type="checkbox" id="ing13">
+                                <label for="ing13">1 1/2 teaspoons salt, divided, or to taste</label>
+                            </div>
+                            <div class="ingredient">
+                                <input type="checkbox" id="ing14">
+                                <label for="ing14">1/4 teaspoon ground black pepper</label>
+                            </div>
+                            <div class="ingredient">
+                                <input type="checkbox" id="ing15">
+                                <label for="ing15">4 tablespoons chopped fresh parsley</label>
+                            </div>
+                            <div class="ingredient">
+                                <input type="checkbox" id="ing16">
+                                <label for="ing16">12 lasagna noodles</label>
+                            </div>
+                            <div class="ingredient">
+                                <input type="checkbox" id="ing17">
+                                <label for="ing17">16 ounces ricotta cheese</label>
+                            </div>
+                            <div class="ingredient">
+                                <input type="checkbox" id="ing18">
+                                <label for="ing18">1 egg</label>
+                            </div>
+                            <div class="ingredient">
+                                <input type="checkbox" id="ing19">
+                                <label for="ing19">3/4 pound mozzarella cheese, sliced</label>
+                            </div>
+                            <div class="ingredient">
+                                <input type="checkbox" id="ing20">
+                                <label for="ing20">3/4 cup grated Parmesan cheese</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <label for="toggle-ingredients" class="toggle-button show-more">Show more</label>
+                    <label for="toggle-ingredients" class="toggle-button show-less">Show less</label>
+                </div>
+            </div>
+
+            <!-- Example 2: Text Paragraph Widget -->
+            <div class="recipe-widget">
+                <h2>Cooking Instructions</h2>
+                <div class="text-container">
+                    <input type="checkbox" id="toggle-text" class="toggle-checkbox">
+                    
+                    <div class="text-content">
+                        <div class="visible-text">
+                            <p>Preheat your oven to 375°F (190°C) and prepare your workspace.</p>
+                            <p>In a large skillet, cook the Italian sausage and ground beef over medium heat.</p>
+                            <p>Add the minced onion and crushed garlic to the meat mixture.</p>
+                            <p>Stir in the crushed tomatoes, tomato paste, and tomato sauce.</p>
+                            <p>Add water, sugar, basil, fennel seeds, and Italian seasoning.</p>
+                            <p>Season with salt and pepper, then let simmer for 30 minutes.</p>
+                            <p>Meanwhile, bring a large pot of salted water to boil.</p>
+                            <p>Cook the lasagna noodles according to package directions.</p>
+                            <p>In a mixing bowl, combine ricotta cheese with egg and parsley.</p>
+                            <p>Drain the cooked noodles and set aside on a clean kitchen towel.</p>
+                        </div>
+                        
+                        <div class="hidden-text">
+                            <p>Spread a thin layer of meat sauce in the bottom of a 9x13 inch baking dish.</p>
+                            <p>Place 3 noodles lengthwise over the sauce in the baking dish.</p>
+                            <p>Spread half of the ricotta cheese mixture over the noodles.</p>
+                            <p>Top with half of the mozzarella cheese slices.</p>
+                            <p>Spoon half of the remaining meat sauce over the mozzarella.</p>
+                            <p>Repeat layers once more, ending with remaining noodles on top.</p>
+                            <p>Cover with aluminum foil and bake for 25 minutes.</p>
+                            <p>Remove foil and sprinkle with Parmesan cheese.</p>
+                            <p>Bake uncovered for an additional 25 minutes until bubbly.</p>
+                            <p>Let stand for 15 minutes before serving to allow layers to set.</p>
+                        </div>
+                    </div>
+                    
+                    <label for="toggle-text" class="toggle-button show-more">Show more</label>
+                    <label for="toggle-text" class="toggle-button show-less">Show less</label>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
