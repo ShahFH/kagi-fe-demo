@@ -17,7 +17,7 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 30px;
-  color: #333;
+  color: black;
 }
 
 /* Added wrapper for side-by-side layout */
@@ -31,18 +31,19 @@ h1 {
 .recipe-widget {
   background: white;
   width: 400px;
-  border: 2px #333;
+  border: 2px solid #3333331A;
   border-radius: 8px;
   padding: 20px;
   flex: 1;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 10% 4px 4px #333;
 }
 
 .recipe-widget h2 {
   font-size: 18px;
+  font-weight: 500;
+  font-family: "Arial", sans-serif;
   color: black;
   margin-bottom: 15px;
-  border-bottom: 1px solid #eee;
   padding-bottom: 8px;
 }
 
@@ -68,7 +69,8 @@ h1 {
 
 .ingredient label {
   cursor: pointer;
-  color: #000;
+  color: black;
+  font-weight: 400;
   font-size: 14px;
 }
 
@@ -90,7 +92,7 @@ h1 {
 /* Text content styles */
 .text-content p {
   margin-bottom: 8px;
-  color: #000;
+  color: black;
   font-size: 14px;
 }
 
@@ -111,8 +113,9 @@ h1 {
   padding: 8px 0;
   background: none;
   border: none;
-  color: #000;
+  color: black;
   font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
   text-align: center;
   transition: opacity 0.2s ease;
